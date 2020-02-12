@@ -242,7 +242,7 @@ namespace Mankalah
                 for (int i = 12; i >= 7; i--)
                 {
                     int lastHole = (i + b.stonesAt(i)) % 13;
-                    // CASE 1.0: If there's a go-again available, add 1 to the score
+                    // CASE 1.0: If there's a go-again available, add 2 to the score
                     if (b.stonesAt(i) == 13 - i) score += 2;
 
                     // CASE 1.1: If there's a go-again available for the opponent, subtract 1 from the score
